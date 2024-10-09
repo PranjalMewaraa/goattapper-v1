@@ -25,7 +25,7 @@ const Home = () => {
 
 const ProfileBox = ()=>{
     return(
-        <div className="min-w-48 h-full flex gap-4 items-center">
+        <div className=" h-full flex gap-4 items-center">
             <div className="h-16 bg-[#283140] rounded-xl"> 
                 <img src={pic} alt="" className="w-full h-full p-1 rounded-full"/>      
             </div>
@@ -35,7 +35,7 @@ const ProfileBox = ()=>{
 }
 const ProfitBox = ()=>{
     return(
-        <div className=" min-w-40 flex flex-col pl-2 py-2 pr-4 items-center rounded-full bg-[#283140]">
+        <div className=" flex flex-col pl-2 py-2 pr-4 items-center rounded-full bg-[#283140]">
             <p className="text-white text-sm">Profit per hour</p>
             <p className="flex text-white items-center text-base gap-2">
                 <span>
