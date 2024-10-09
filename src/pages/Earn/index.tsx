@@ -3,7 +3,7 @@ import second from '../../assets/Images/ico.png';
 
 const Earn: React.FC = () => {
   return (
-    <div className='w-full p-4 flex items-center h-full'>
+    <div className='w-full px-2 py-4 flex items-center h-full'>
       <div id='earn' className='w-full h-4/5 flex flex-col text-white gap-2'>
         <h1 className='w-full text-center font-[ageobold] pt-16 text-4xl'>Earn More Coins!</h1>
         <p className='w-full text-center'>Complete exciting tasks and earn coins</p>
@@ -29,7 +29,7 @@ interface CardElemProps {
 
 const CardElem: React.FC<CardElemProps> = (props) => {
   return (
-    <div className='flex justify-between p-4 w-full items-center bg-[#283140] h-20 rounded-lg'>
+    <div className='flex justify-between px-2 py-4 w-full items-center bg-[#283140] h-20 rounded-lg'>
       <img src={logo} alt="Coin Icon" />
       <p className='font-medium font-[ageo] text-lg'>{props.name}</p>
       <p className='flex flex-col items-center gap-1'>
