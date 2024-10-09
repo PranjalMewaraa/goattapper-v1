@@ -12,5 +12,5 @@
 #earn{
   background: url("./assets/Images/earnbg.png");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
