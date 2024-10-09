@@ -35,7 +35,7 @@ const ProfileBox = ()=>{
 }
 const ProfitBox = ()=>{
     return(
-        <div className=" flex flex-col pl-2 py-2 pr-4 items-center rounded-full bg-[#283140]">
+        <div className=" flex flex-col px-3 py-1  items-center rounded-full bg-[#283140]">
             <p className="text-white text-sm">Profit per hour</p>
             <p className="flex text-white items-center text-base gap-2">
                 <span>
