@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: ageo;
+    src: url(./assets/fonts/653f9af349e167ced209bf66_Ageo-Regular.woff2);
+}
+
+@font-face {
+    font-family: ageobold;
+    src: url(./assets/fonts/AgeoBold.otf);
+}
+@font-face {
+    font-family: ageolight;
+    src: url(./assets/fonts/lght.woff2);
+}
