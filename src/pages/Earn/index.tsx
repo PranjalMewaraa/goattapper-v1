@@ -32,8 +32,8 @@ const CardElem: React.FC<CardElemProps> = (props) => {
     <div className='flex justify-between p-4 w-full items-center bg-[#283140] h-20 rounded-lg'>
       <img src={logo} alt="Coin Icon" />
       <p className='font-medium font-[ageo] text-lg'>{props.name}</p>
-      <p className='flex items-center gap-1'>
-        <span><img src={second} className='h-6' alt="Reward Icon" /></span>
+      <p className='flex flex-col items-center gap-1'>
+        <span><img src={second} className='h-5' alt="Reward Icon" /></span>
         + 10
       </p>
     </div>
