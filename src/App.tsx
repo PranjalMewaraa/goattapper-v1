@@ -8,6 +8,7 @@ import Earn from "./pages/Earn";
 import Airdrop from "./pages/Airdrop";
 
 
+
 function App() {
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
@@ -17,12 +18,25 @@ function App() {
       const vh = window.innerHeight * 0.01;
       document.documentElement.style.setProperty('--vh', `${vh}px`);
     };
+    
 
     updateVh();
+    
     window.addEventListener('resize', updateVh);
 
     return () => window.removeEventListener('resize', updateVh);
   }, []);
+
+  useEffect(()=>{
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
+
+    scrollToTop();
+  },[activeIndex])
 
   return (
     <div id="main_div" className=" max-w-screen-sm overflow-hidden relative"
