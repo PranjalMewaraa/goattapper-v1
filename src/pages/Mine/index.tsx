@@ -42,7 +42,7 @@ const MineCard: React.FC<MineCardProps> = ({ name, img }) => {
           <div>LVL1</div>
           <div className='flex gap-1 items-center'>
             <span>
-              <img src={ico} className="w-8 h-8" alt="goat_coin" />
+              <img src={ico} className="w-6 h-6" alt="goat_coin" />
             </span>
             100
           </div>
@@ -85,7 +85,7 @@ const Mine: React.FC = () => {
       <TopNav active={activeSection} handleClick={handleSectionClick} />
       <h1 className="w-full text-white text-4xl font-[ageobold] text-center p-10 flex justify-center items-center gap-2">
         <span><img src={ico} alt="goat_coin" /></span>
-        {balance}
+        {balance?.toFixed(1)}
       </h1>
       
       <div className='w-1/2'>
