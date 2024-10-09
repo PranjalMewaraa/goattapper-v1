@@ -25,9 +25,9 @@ const Home = () => {
 
 const ProfileBox = ()=>{
     return(
-        <div className=" h-full flex gap-4 items-center">
+        <div className="h-full flex gap-4 items-center">
             <div className="h-16 bg-[#283140] rounded-xl"> 
-                <img src={pic} alt="" className="w-full h-full p-1 rounded-full"/>      
+                <img src={pic} alt="" className=" aspect-square h-full p-1 rounded-full"/>      
             </div>
             <h1 className="text-white text-lg font-semibold">Pranjal (CEO)</h1>
         </div>
