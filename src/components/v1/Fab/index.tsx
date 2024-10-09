@@ -10,7 +10,7 @@ interface OptionButtonsProps {
 const OptionButtons: React.FC<OptionButtonsProps> = ({ src, style }) => {
   return (
     <div
-      className="w-20 h-20 p-1 bg-slate-500 flex flex-col gap-1 rounded-lg"
+      className="w-16 h-16 p-1 bg-slate-500 flex flex-col gap-1 rounded-lg"
       style={style}
     >
       <img className="w-full h-4/5" src={src} alt="Option" />
