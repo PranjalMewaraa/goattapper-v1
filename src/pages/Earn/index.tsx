@@ -3,7 +3,7 @@ import second from '../../assets/Images/ico.png';
 
 const Earn: React.FC = () => {
   return (
-    <div className='w-full p-4 flex items-end h-full'>
+    <div className='w-full p-4 flex items-center h-full'>
       <div id='earn' className='w-full h-4/5 flex flex-col text-white gap-2 translate-y-8'>
         <h1 className='w-full text-center font-[ageobold] text-4xl'>Earn More Coins!</h1>
         <p className='w-full text-center'>Complete exciting tasks and earn coins</p>
