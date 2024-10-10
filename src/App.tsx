@@ -6,6 +6,7 @@ import Games from "./pages/Games";
 import Mine from "./pages/Mine";
 import Earn from "./pages/Earn";
 import Airdrop from "./pages/Airdrop";
+import Profile from "./pages/Profile";
 
 
 
@@ -36,17 +37,18 @@ function App() {
     };
 
     scrollToTop();
-  },[activeIndex])
+  },[activeIndex,setActiveIndex])
 
   return (
     <div id="main_div" className=" max-w-screen-sm overflow-hidden relative"
     style={{ height: 'calc(var(--vh, 1vh) * 100)' }}>
       <div className=" overflow-y-scroll" style={{ height: 'calc(var(--vh, 1vh) * 100)' }}>
-      {activeIndex === 0 && <Home/>}
+      {activeIndex === 0 && <Home activeIndex={activeIndex} setActiveIndex={setActiveIndex}/>}
       {activeIndex === 1 && <Games/>}
-      {activeIndex === 2 && <Airdrop/>}
+      {activeIndex === 2 && <Profile/>}
       {activeIndex === 3 && <Mine/>}
       {activeIndex === 4 && <Earn/>}
+      {activeIndex === 5 && <Profile/>}
       </div>
       <BottomNavbar activeIndex={activeIndex} setActiveIndex={setActiveIndex}/>
     </div>
