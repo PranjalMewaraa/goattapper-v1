@@ -36,7 +36,7 @@ const MineCard: React.FC<MineCardProps> = ({ name, img }) => {
         <div className='text-lg w-full text-center font-bold'>{name}</div>
         <div className='w-full font-[ageobold] items-center py-2 text-lg flex gap-2'>
           <img src={img} alt={name} />
-          <div className='flex flex-col gap-1 text-sm'>Profit / Hour <span>+10</span></div>
+          <div className='flex flex-col gap-1 text-xs'>Profit / Hour <span className='text-sm'>+10</span></div>
         </div>
         <div className='flex justify-between items-center py-1 border-t border-dashed border-white'>
           <div>LVL1</div>
