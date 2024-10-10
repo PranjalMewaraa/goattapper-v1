@@ -51,7 +51,7 @@ const ProfileBox: React.FC = () => {
 const ProfitBox: React.FC = () => {
   return (
     <div className="flex flex-col px-3 py-1 items-center rounded-full bg-[#283140]">
-      <p className="text-white text-sm">Profit per hour</p>
+      <p className="text-white text-sm">Profit / hour</p>
       <p className="flex text-white items-center text-base gap-2">
         <span>
           <img src={ico} className="w-8 h-8" alt="goat_coin" />
