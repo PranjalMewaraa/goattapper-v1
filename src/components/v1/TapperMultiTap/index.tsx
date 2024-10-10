@@ -97,7 +97,7 @@ const PulseButton: React.FC = () => {
     document.getElementById("pulseContainer")?.appendChild(newPlusOne);
     plusOneRefs.current.push(newPlusOne);
 
-    const colors = ["#FFFFF"];
+    const colors = ["#FFFF"];
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
 
     const pulseContainer = document.getElementById("pulseContainer");
