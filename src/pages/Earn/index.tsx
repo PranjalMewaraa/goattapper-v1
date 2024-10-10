@@ -18,7 +18,7 @@ const Earn: React.FC = () => {
           <CardElem setOpen={setIsDrawerOpen} isOpen = {isDrawerOpen} name="Subscribe GoatTapper YT" />
         </div>
         <p className='w-full text-center text-lg font-[ageo]'>Daily Tasks</p>
-        <div className='w-full flex flex-col gap-2 p-4'>
+        <div className='w-full flex flex-col gap-2 p-4 pb-10'>
           <CardElem name="Daily Rewards" setOpen={setIsDrawerOpen} isOpen = {isDrawerOpen}/>
           <CardElem name="Daily Rewards" setOpen={setIsDrawerOpen} isOpen = {isDrawerOpen}/>
           <CardElem name="Daily Rewards" setOpen={setIsDrawerOpen} isOpen = {isDrawerOpen}/>
