@@ -103,14 +103,14 @@ const PulseButton: React.FC = () => {
     const pulseContainer = document.getElementById("pulseContainer");
     const pulseContainerRect = pulseContainer?.getBoundingClientRect();
     if (pulseContainerRect) {
-      const centerX = pulseContainerRect.width / 2;
+      const centerX = (Math.random()-0.1) * pulseContainerRect.width ;
       newPlusOne.style.left = `${centerX}px`;
       newPlusOne.style.top = `100px`;
       newPlusOne.style.transform = "translate(-50%, -50%)";
       newPlusOne.style.zIndex = "20";
       newPlusOne.style.color = randomColor;
 
-      const randomX = (Math.random() - 0.8) * 100;
+      const randomX = (Math.random() - 0.1) * 100;
 
       gsap.fromTo(
         newPlusOne,
