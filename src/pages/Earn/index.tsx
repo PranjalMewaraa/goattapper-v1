@@ -63,7 +63,7 @@ const CardElem: React.FC<CardElemProps> = (props) => {
     <div
       className="flex justify-between z-30 px-2 py-4 w-full items-center bg-[#283140] h-20 rounded-lg cursor-pointer" 
       onClick={OpenDrawer} // Add the correct handler here
-      onTouchStart={OpenDrawer}
+      
     >
       <img src={logo} alt="Coin Icon" />
       <p className="font-medium font-[ageo] text-lg">{props.name}</p>
