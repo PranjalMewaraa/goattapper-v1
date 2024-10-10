@@ -11,8 +11,8 @@ const Profile = () => {
          <ProfitBox/>
     </div>
     <div className="w-full pt-4 text-center text-white">LeaderBoard</div>
-    <div className="w-full h-64 mt-6 px-8">
-        <div className=" aspect-square h-full bg-slate-800 rounded-2xl">
+    <div className="w-full h-64 mt-6 px-8 flex justify-center items-center">
+        <div className=" aspect-square h-4/5 bg-slate-800 rounded-2xl">
         <img src={goat} alt="" />
         </div>
     </div>
