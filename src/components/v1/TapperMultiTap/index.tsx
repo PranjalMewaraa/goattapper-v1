@@ -93,7 +93,7 @@ const PulseButton: React.FC = () => {
 
     const newPlusOne = document.createElement("div");
     newPlusOne.className = "absolute text-2xl font-bold pointer-events-none";
-    newPlusOne.textContent = `🪙+${fingerCount}`;
+    newPlusOne.textContent = `❤️+${fingerCount}`;
     document.getElementById("pulseContainer")?.appendChild(newPlusOne);
     plusOneRefs.current.push(newPlusOne);
 
@@ -105,12 +105,12 @@ const PulseButton: React.FC = () => {
     if (pulseContainerRect) {
       const centerX = pulseContainerRect.width / 2;
       newPlusOne.style.left = `${centerX}px`;
-      newPlusOne.style.top = `150px`;
+      newPlusOne.style.top = `100px`;
       newPlusOne.style.transform = "translate(-50%, -50%)";
       newPlusOne.style.zIndex = "20";
       newPlusOne.style.color = randomColor;
 
-      const randomX = (Math.random() - 0.3) * 100;
+      const randomX = (Math.random() - 0.8) * 100;
 
       gsap.fromTo(
         newPlusOne,
