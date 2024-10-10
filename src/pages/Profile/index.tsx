@@ -12,11 +12,11 @@ const Profile = () => {
     </div>
     <div className="w-full pt-4 text-center text-white">LeaderBoard</div>
     <div className="w-full h-64 mt-6 px-8 flex justify-center items-center">
-        <div className=" aspect-square h-4/5 bg-slate-800 rounded-2xl">
+        <div className=" aspect-square h-full bg-slate-800 rounded-2xl">
         <img src={goat} alt="" />
         </div>
     </div>
-    <div className="w-[90%] h-48 pl-8 overflow-x-scroll">
+    <div className="w-[90%] h-28 pl-8 overflow-x-scroll">
         <div className="w-fit flex h-full items-center gap-2">
           <CharCard/>
           <CharCard/>
