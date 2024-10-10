@@ -44,7 +44,7 @@ const BottomDrawer: React.FC<DrawerProps> = ({ children, isOpen, onClose }) => {
   }, [isOpen]);
 
   return (
-    <div className="fixed inset-0" ref={layout}>
+    <div className="fixed inset-0 mt-10" ref={layout}>
       {/* Drawer */}
       <div
         ref={drawerRef}
