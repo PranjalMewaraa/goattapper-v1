@@ -5,7 +5,7 @@ import './App.css'
 import Games from "./pages/Games";
 import Mine from "./pages/Mine";
 import Earn from "./pages/Earn";
-import Airdrop from "./pages/Airdrop";
+
 import Profile from "./pages/Profile";
 
 
