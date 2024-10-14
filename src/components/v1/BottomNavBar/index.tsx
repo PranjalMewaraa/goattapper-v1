@@ -18,8 +18,9 @@ const BottomNavbar: FC<BottomNavbarProps> = ({ activeIndex, setActiveIndex }) =>
 
   return (
     <div
-      className="absolute bottom-0 flex z-50 items-center justify-evenly w-full rounded-t-xl shadow-md p-2 border-r-2 border-b-2 border-l-2 border-t-1 border-yellow-500"
+      className="absolute bottom-0 flex items-center justify-evenly w-full rounded-t-xl shadow-md p-2 border-r-2 border-b-2 border-l-2 border-t-1 border-yellow-500"
       style={{
+        zIndex:100,
         background: "linear-gradient(to right, #2D3748, #1A202C)",
       }}
     >
@@ -31,6 +32,7 @@ const BottomNavbar: FC<BottomNavbarProps> = ({ activeIndex, setActiveIndex }) =>
               activeIndex === index ? "text-yellow-500" : "text-slate-50"
             }`}
             onClick={() => handleButtonClick(index)}
+            onTouchStart={() => handleButtonClick(index)}
           >
             {label === "Home" && (
               <img src={mansion} className="w-6 h-6 p-1" alt="Home" />
