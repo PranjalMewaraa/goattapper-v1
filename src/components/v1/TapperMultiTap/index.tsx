@@ -27,7 +27,7 @@ const PulseButton: React.FC = () => {
     window.dispatchEvent(new Event("localStorageUpdated"));
   };
 
-  const handleTouchStart = (event: React.TouchEvent) => {
+  const handleTouchStart = (event) => {
     // Debounce check: Skip handling if already processing a recent touch
     if (isDebouncing) return;
 
@@ -171,7 +171,8 @@ const PulseButton: React.FC = () => {
       <div
         id="pulseContainer"
         className="absolute w-full h-full inset-0 flex items-center justify-center"
-        onTouchStart={handleTouchStart}  // Add touch event listener here
+        onTouchStart={handleTouchStart} 
+        onClick={handleTouchStart} // Add touch event listener here
       >
         <div className="relative w-full h-full">
           <div
